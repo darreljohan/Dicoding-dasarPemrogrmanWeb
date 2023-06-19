@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Submission Dicoding</title>
+
+        <style>
+            header {
+                background-color: #3E54AC;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: sticky;
+                width: 100%;
+            }
+
+            nav li {
+                display: inline;
+                list-style-type: none;
+                margin-right: 20px;
+               
+            }
+
+            footer {
+                background-color: #3E54AC;
+            }
+
+            img{
+                height: 50px;
+                width: 50px;
+            }
+             
+            main{
+                overflow: auto;
+            }
+
+            .content{
+                display: flex;
+                background-color: darkgoldenrod;
+                flex-direction: row-reverse;
+            }
+
+            aside{
+                flex-basis: 25% ;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+
+            article{
+                display: flex;
+                flex-basis: 75%;
+                flex-direction: column;
+
+            }
+
+
+            .submenu{
+                display: flex;
+                flex-direction: row;
+                
+                width :100%;
+                background-color: cornflowerblue;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .submenu > p{
+                flex-basis: 10%;
+                
+            }
+
+            .submenu > h3{
+                
+                flex-grow: 1;
+               text-align: center;
+            }
+
+            section{
+                display: flex;
+                border-style: solid;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section > :not(.submenu){
+                
+            }
+
+            h3{
+                
+            }
+
+            figcaption{
+                font-size: x-small;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+           <h2 style="text-align: center; padding-left: 2%;">TCP/IP Layer Model </h2>
+            <nav>
+                <ul>
+                    <li><a href="#physical">Physical Layer</a></li>
+                    <li><a href="#Data">Data Link Layer</a></li>
+                    <li><a href="#Network">Network Layer</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        
+        <main>
+            <div class ="content">
+                <aside style="background-color: cornflowerblue;">
+                    <h3 style="background-color:#ECF2FF">Tentang Pembuat</h3>
+                    <img src="Darrel Johan - 1303200056.JPG">
+                    <p style="background-color:#ECF2FF">Nama : Darrel Johan</p>
+                    <p style="padding: 4% 4% 4% 4%;">Mahasiswa yang sedang berkuliah di Telkom University yang sedang belajar bersama Dicoding </p>
+                </aside>
+
+                <article style="background-color: #ECF2FF;">
+                    <section>
+
+                        <div class="submenu">
+                            <h3 id="physical">Physical Layer</h3>
+                            <p style="text-align: center;">V</p>
+                        </div>
+
+                        <img src="hub.jpg" style="width:50%; height: fit-content; object-fit: cover;object-position: center;">
+                        <figcaption>Perangkat Physical Layer</figcaption>
+
+                        <p>Physical layer merupakan layer terbawah dari layer model dari jaringan komputer. Physical layer terdiri dari perangkat keras dasar jaringan. Physical layer adalah layer yang mendasari struktur data logical dari level fungsi yang lebih tinggidari sebuah jaringan. Karena kebanyakan teknologi perangkat keras yang tersediadengan karakteristik yang sangat beragam, kemungkinan physical layer adalah layer yang paling rumit di arsitektur jaringan.</p>
+                    </section>
+                
+                    <section>
+                        <div class="submenu">
+                            <h3 id="Data">Data Link Layer</h3>
+                            <p style="text-align: center;">V</p>
+                        </div>
+
+                        <img src="switch.jfif" style="width:50%; height: 50%; object-fit: cover;object-position: center;">
+                        <figcaption>Perangkat Data Link Layer</figcaption>
+
+                        <p>Fungsi dari data link layer adalah melakukan proses grouping secara logic, atau secara tidak terlihat. Proses grouping merupakan proses penyatuan dari beberapa paket data ke dalam satu kesatuan paket data yang utuh. Perlu diketahui, ketika paket data mulai berjalan melewati lapisan – lapisan OSI layer, maka paket data tersebut akan terpecah – pecah menjadi beberapa bagian kecil. Tugas dari data link layer inilah yang dapat melakukan proses groping atau penggabungan kembali pecahan paket – paket data tersebut menjadi utuh kembali.</p>
+                    </section>
+
+                    <section>
+
+                        <div class="submenu">
+                            <h3 id="Network">Network Layer</h3>
+                            <p style="text-align: center;">V</p>
+                        </div>
+
+                        <img src="router.jfif" style="width:50%; height: 50%; object-fit: cover;object-position: center;">
+                        <figcaption>Perangkat Network Layer</figcaption>
+                        <p>Sebuah data dan juga paket data tentu saja memiliki tujuan. Tujuan dari paket data tersebut adalah komputer lainnya yang juga sudah terhubung ke dalam jaringan. Untuk dapat menentukan komputer mana yang akan ditransmisikan paket datanya, maka network layer memiliki peran yang sangat penting. Network layer akan menentukan kemana sebuah paket data akan ditransmisikan, sesuai dengan perintah yang sdah diberikan kepadanya.</p>
+                    </section>
+                
+                </article>
+            </div>
+        </main>
+
+        <footer>
+            <h4>Website untuk submission dicoding 2023</h4>
+        </footer>
+
+    </body>
+
+</html>
